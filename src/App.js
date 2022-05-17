@@ -86,7 +86,7 @@ function App() {
                 <img
                   className="w-96"
                   src="https://preview.uideck.com/items/appland/assets/images/header-app.png"
-                  alt="image mobile"
+                  alt=" mobile"
                 />
               </div>
               </div>
@@ -219,7 +219,7 @@ function App() {
               <img 
                 className=" w-52 mb-12 -rotate-12 absolute top-20 left-12 " 
                 src="https://preview.uideck.com/items/appland/assets/images/about-app.png"
-                alt="image mobile2"
+                alt="mobile2"
               />
               {/*Content*/}
               <div className="mt-32 text-left px-4 ">
@@ -330,7 +330,7 @@ function App() {
                 <img
                     className="w-72 relative"
                   src="https://preview.uideck.com/items/appland/assets/images/features-app.png"
-                  alt="image mobile3"
+                  alt="mobile3"
                 />
               </div>
             </div>
@@ -352,27 +352,27 @@ function App() {
               {/*Image 4*/}
               <div className="flex  justify-around flex-row  my-32 px-20 ">
                 <img className="invisible md:visible md:absolute  md:z-10 md:-top-2"
-                  alt="image mobile4"
+                  alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/app-frame.png"
                 />
                 <img className="absolute -top-10 -z-10 shadow-xl rounded-lg"
-                  alt="image mobile4"
+                  alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/screenshot-2.jpg"
                 />
                 <img  className="absolute w-72 -top-5 -z-20 left-2  shadow-2xl "
-                  alt="image mobile4"
+                  alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/screenshot-2.jpg"
                 />
                 <img  className="absolute w-72 -top-5 -z-20 right-2 shadow-2xl "
-                  alt="image mobile4"
+                  alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/screenshot-3.jpg"
                 />
                 <img className="absolute w-64 -top-0 -z-30 left-0 shadow-2xl"
-                  alt="image mobile4"
+                  alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/screenshot-4.jpg"
                 />
                 <img className=" absolute w-64 -top-0 -z-30 right-0 shadow-2xl"
-                  alt="image mobile4"
+                  alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/screenshot-3.jpg"
                 />
               </div>
@@ -423,11 +423,11 @@ function App() {
               </div>
               {/*avatar*/}
               <div className="flex gap-8 justify-between">
-                <img className="rounded-full border-4 border-white"src="https://preview.uideck.com/items/appland/assets/images/author-4.jpg" />
-                <img className="rounded-full border-4 border-white"src="https://preview.uideck.com/items/appland/assets/images/author-3.jpg" />
-                <img className="invisible" src="https://preview.uideck.com/items/appland/assets/images/author-2.jpg" />
-                <img className="invisible" src="https://preview.uideck.com/items/appland/assets/images/author-5.jpg" />
-                <img className="invisible" src="https://preview.uideck.com/items/appland/assets/images/author-6.jpg" />
+                <img alt="avatar" className="rounded-full border-4 border-white"src="https://preview.uideck.com/items/appland/assets/images/author-4.jpg" />
+                <img alt="avatar" className="rounded-full border-4 border-white"src="https://preview.uideck.com/items/appland/assets/images/author-3.jpg" />
+                <img className="invisible"  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-2.jpg" />
+                <img className="invisible"  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-5.jpg" />
+                <img className="invisible"  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-6.jpg" />
               </div>
             </div>
           </section>
@@ -498,7 +498,7 @@ function App() {
                 <img
                     className="w-96 relative"
                   src="https://preview.uideck.com/items/appland/assets/images/download-app.png"
-                  alt="image mobile3"
+                  alt=" mobile3"
                 />
               </div>
             </div>
