@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.text{
+    @apply text-gray-600  mb-5 text-lg
+}
+.btn{
+    @apply bg-blue-600 border-transparent border-2 text-white px-6 py-2 rounded-xl
+} 
+.card-section2{
+    @apply flex flex-col justify-start items-center px-4 border-gray-200 border-2 py-10 mt-10 bg-cyan-100 space-y-4
+    shadow-md hover:shadow-xl hover:transition-all hover:duration-300 hover:ease-in rounded-lg text-center
+}
+.text-hover{
+    @apply text-xl font-semibold hover:transition-all hover:duration-500 hover:ease-in cursor-pointer
+}
+.card-section4{
+    @apply text-left flex flex-col justify-start items-start px-4 border-gray-200 border-2 py-10 mt-10 bg-cyan-100 space-y-4
+    shadow-md hover:shadow-xl hover:transition-all hover:duration-300 hover:ease-in rounded-lg 
+}
+.text-li{
+    @apply text-lg text-gray-500
+}
