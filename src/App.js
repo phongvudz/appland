@@ -337,7 +337,7 @@ function App() {
             </div>
           </section>
           {/*Section 5*/}
-          <section className="mt-32">
+          <section className="my-32">
             <div className="">
               {/*Content*/}
               <div className="text-center">
@@ -348,7 +348,7 @@ function App() {
                   signiferumque.
                 </p>
               </div>
-              <div className="relative ">
+              <div className="relative">
               {/*Image 4*/}
               <div className="flex  justify-around flex-row  my-32 px-20 ">
                 <img className="invisible md:visible md:absolute  md:z-10 md:-top-2"
@@ -380,7 +380,7 @@ function App() {
             </div>
           </section>
           {/*Section 6*/}
-          <section className=" bg-cyan-100 ">
+          <section className=" bg-cyan-100 mt-64 ">
             <div className="container py-52">
               {/*Content*/}
               <div className="text-center  ">
