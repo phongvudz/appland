@@ -2,33 +2,33 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="overflow-y-scroll overflow-x-hidden">
-      <div className="container">
+    <div className="overflow-x-hidden">
+      <div className="">
         {/*Header*/}
-        <header className="sticky -top-6 bg-white h-20 flex w-full  ">
+        <header className="fixed top-0 bg-white h-20 flex max-w-full container py-4 z-10 ">
           {/*nav*/}
-          <nav className="relative">
-            <div className="flex justify-center items-center gap-16 -mt-5">
+          <nav className="flex justify-around container">
+            <div className="flex flex-row items-center gap-0">
               {/*logo*/}
               <div>
                 <img
-                  className="w-48 absolute top-8 -left-4"
+                  className="w-40 absolute top-6 left-6 md:left-12 2xl:left-64"
                   src="https://preview.uideck.com/items/appland/assets/images/logo.png"
                   alt="logo app"
                 />
               </div>
               {/*list*/}
               <div className="">
-                <ul className="invisible">
-                  <li>Home</li>
-                  <li>Why</li>
-                  <li>Features</li>
-                  <li>Screenshots</li>
-                  <li>Pricing</li>
-                  <li>Download</li>
+                <ul className="flex gap-12 lg:ml-80 2xl:mx-96  invisible lg:visible" >
+                  <li className="font-semibold cursor-pointer hover:text-blue-400 hover:duration-500 hover:ease-in">Home</li>
+                  <li className="font-semibold cursor-pointer hover:text-blue-400 hover:duration-500 hover:ease-in">Why</li>
+                  <li className="font-semibold cursor-pointer hover:text-blue-400 hover:duration-500 hover:ease-in">Features</li>
+                  <li className="font-semibold cursor-pointer hover:text-blue-400 hover:duration-500 hover:ease-in">Screenshots</li>
+                  <li className="font-semibold cursor-pointer hover:text-blue-400 hover:duration-500 hover:ease-in">Pricing</li>
+                  <li className="font-semibold cursor-pointer hover:text-blue-400 hover:duration-500 hover:ease-in">Download</li>
                 </ul>
               </div>
-              <div className="absolute top-8 -right-4 translate-x-36">
+              <div className="visible lg:invisible absolute top-7 right-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-8 w-8"
@@ -48,47 +48,49 @@ function App() {
           </nav>
         </header>
         {/*Container1*/}
-        <div>
+        <div className="container lg:container-none">
           {/*Section1*/}
-          <section className="mt-8">
+          <section className=" mt-24 lg:mt-24 2xl:mt-32 ">
             {/*(Content & image)1*/}
-            <div>
+            <div className="lg:flex md:flex md:flex-col md:items-center md:justify-center">
               {/*Content*/}
-              <div>
-                <h1 className="text-2xl font-semibold mb-7"><span className=" text-blue-500">Launch Your App</span> With Confidence and Creativity.</h1>
-                <p className="text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diamnon umy eirmomp or invidunt ut labore et dolore magna
-                  aliquyam eratse diam voluptua. At vero eosaccusam.
-                </p>
-                {/*2 button and 1 image  */}
-                <div className="flex">
-                <div className="flex gap-10 mt-5  justify-start">  
-                  <button class="btn">Download Now</button>
-                  <button >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-14 w-14 text-blue-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>{" "}
-                  </button>
+              <div className=" lg:flex lg:justify-between lg:items-center lg:p-6 2xl:p-12">
+                <div className="max-w-lg mb-20 lg:-ml-12 lg:mr-28 lg:p-12">
+                  <h1 className="text-2xl font-semibold mb-7 lg:text-4xl "><span className=" text-blue-500">Launch Your App</span> With Confidence and Creativity.</h1>
+                  <p className="text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diamnon umy eirmomp or invidunt ut labore et dolore magna
+                    aliquyam eratse diam voluptua. At vero eosaccusam.
+                  </p>
+                  {/*2 button and 1 image  */}
+                  <div className="flex">
+                  <div className="flex  gap-10 mt-5 ">  
+                    <button class="btn">Download Now</button>
+                    <button >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-14 w-14 text-blue-500"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>{" "}
+                    </button>
+                  </div>
+                  </div>
                 </div>
-              </div>
-              {/*image1*/}
-              <div className="mt-12 my-20">
-                <img
-                  className="w-96"
-                  src="https://preview.uideck.com/items/appland/assets/images/header-app.png"
-                  alt=" mobile"
-                />
-              </div>
+                {/*image1*/}
+                <div className="  ">
+                  <img
+                    className="w-96"
+                    src="https://preview.uideck.com/items/appland/assets/images/header-app.png"
+                    alt=" mobile"
+                  />
+                </div>
               </div>
             </div>
           </section>
@@ -98,17 +100,17 @@ function App() {
       <div>
         <body>
           {/*Section2*/}
-          <section className="container mb-32">
+          <section className="container my-32">
             {/*Content*/}
-            <div className="">
-              <h1 className="text-2xl font-semibold mb-5">Why You Should Choose AppLand</h1>
+            <div className="text-center md:max-w-lg md:mx-auto">
+              <h1 className="text-2xl font-semibold mb-5 lg:text-4xl">Why You Should Choose AppLand</h1>
               <p class="text">
                 Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor
                 comprehensam at vis. Vel ut percipitur dignissim signiferumque.
               </p>
             </div>
             {/*Card*/}
-            <div className="flex flex-col">
+            <div className="flex flex-col lg:flex-row lg:gap-4">
               {/*Card1*/}
               <div class="card-section2" >
                 {/*logo*/}
@@ -209,22 +211,23 @@ function App() {
             </div>
           </section>
           {/*Section3*/}
-          <section className="bg-cyan-200 mb-32">
+          <section className="bg-cyan-200 ">
             {/*Container*/}
-            <div className=" py-32 relative">
+            <div className="py-32 relative lg:flex lg:flex-row lg:mx-auto lg:max-w-3xl lg:justify-center lg:items-center lg:gap-20 2xl:gap-44 2xl:max-w-6xl ">
+              <div>
               {/*image2*/}
-              <div className=" w-80 h-80 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 relative border-8 border-r border-purple-500 hover:scale-125 hover:transition-all hover:duration-500 hover:ease-in">
-
+              <div className="w-80 h-80 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 relative border-8 border-r border-purple-500 hover:scale-125 hover:transition-all hover:duration-700 hover:ease-in lg:hover:scale-150 ">
               </div>
               <img 
-                className=" w-52 mb-12 -rotate-12 absolute top-20 left-12 " 
+                className=" w-52 mb-12 -rotate-12 absolute top-20 left-12 lg:w-64 lg:top-12 2xl:w-60 " 
                 src="https://preview.uideck.com/items/appland/assets/images/about-app.png"
                 alt="mobile2"
               />
+              </div>
               {/*Content*/}
-              <div className="mt-32 text-left px-4 ">
-                <h1 className="text-xl font-semibold mb-4">Comes With All You Need.</h1>
-                <p class="text-gray-400 mb-4">
+              <div className="mt-32 text-left px-4 lg:mt-0">
+                <h1 className="text-xl font-semibold mb-4 lg:text-4xl 2xl:text-5xl">Comes With All You Need.</h1>
+                <p class="text-gray-400 mb-4 2xl:font-semibold">
                   Alii nusquam cu duo, vim eu consulatu percipitur, meis
                   doorcomprehen sam at vis. Vel ut dignissim signiferumq Alii
                   nusquam cuduo, vim eusde consulatu percipitur, meis dolor
@@ -233,24 +236,27 @@ function App() {
                   signiferumq nusquam.
                 </p>
                 {/*Button*/}
-                <div class="text-center border-2 border-transparent bg-blue-600 w-36 py-3 text-white rounded-lg mt-8" >
-                  <button>Get the app</button>
+                <div class="text-center font-semibold border-2 border-transparent bg-blue-600 w-36 py-3 text-white rounded-lg mt-8 hover:bg-blue-300 hover:duration-300 hover:ease-in hover:text-black" >
+                  <button className="">Get the app</button>
                 </div>
               </div>
             </div>
           </section>
           {/*Section4*/}
-          <section className="container">
+          <section className="container my-32">
             <div className="">
               {/*Content*/}
-              <div className=" text-center">
-                <h1 className="text-xl font-semibold mb-5">Awesome Key Features.</h1>
+              <div className=" text-center mx-auto max-w-xl">
+                <h1 className="text-xl font-semibold mb-5 lg:text-4xl">Awesome Key Features.</h1>
                 <p class="text text-lg mb-5">Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.</p>
               </div>
               {/*Card*/}
-              <div className="">
+              <div className="lg:flex lg:gap-20 lg:items-center 2xl:flex 2xl:justify-center">
+              <div className="">          
                 {/*Card 1*/}
-                <div class="card-section4">
+                <div class="card-section4 ">
+                  <div className="md:flex md:gap-8 ">
+                  <div>
                   {/*logo*/}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -266,112 +272,95 @@ function App() {
                       d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
+                  </div>
                   {/*Content*/}
+                  <div className="">
                   <h1 class="text-hover hover:text-blue-500">Fully Responsive</h1>
                   <p class="text">
                     Lorem ipsum dolor sit ametco snsetetur sadipscing elitr sed
                     diam nonumy eirmod.
                   </p>
+                  </div>
+                </div>
                 </div>
                 {/*Card 2*/}
-                <div class="card-section4">
+                <div class="card-section4 ">
+                  <div className="md:flex md:gap-8 ">
+                  <div>
                   {/*logo*/}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-20 w-20 text-white bg-purple-600 rounded-3xl"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white bg-purple-600 rounded-3xl" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" > <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /> </svg>
+                  </div>
                   {/*Content*/}
-                  <h1 class="text-hover hover:text-purple-600">Refreshing Design</h1>
-                  <p class="text">
-                    Lorem ipsum dolor sit ametco snsetetur sadipscing elitr sed
-                    diam nonumy eirmod.
-                  </p>
+                  <div className="">
+                  <h1 class="text-hover hover:text-purple-600">Refreshing Design</h1> <p class="text"> Lorem ipsum dolor sit ametco snsetetur sadipscing elitr sed diam nonumy eirmod. </p>
+                  </div>
+                </div>
                 </div>
                 {/*Card 3*/}
-                <div class="card-section4">
+                <div class="card-section4 ">
+                  <div className="md:flex md:gap-8 ">
+                  <div>
                   {/*logo*/}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-20 w-20 text-white bg-yellow-600 rounded-3xl"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-                    />
-                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white bg-yellow-600 rounded-3xl" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" > <path stroke-linecap="round" stroke-linejoin="round" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" /> </svg>
+                  </div>
                   {/*Content*/}
-                  <h1 class="text-hover hover:text-yellow-600">Bootstrap 4</h1>
-                  <p class="text">
-                    Lorem ipsum dolor sit ametco snsetetur sadipscing elitr sed
-                    diam nonumy eirmod.
-                  </p>
+                  <div className="">
+                  <h1 class="text-hover hover:text-yellow-600">Bootstrap 4</h1> <p class="text"> Lorem ipsum dolor sit ametco snsetetur sadipscing elitr sed diam nonumy eirmod. </p>
+                  </div>
+                </div>
                 </div>
               </div>
               {/*Image 3*/}
               <div className="relavtive">
                 <div className=" mt-28">
-                <div className="w-52 h-52 bg-gradient-to-r from-yellow-500 to-cyan-400 rounded-full absolute left-36 -translate-y-14 "></div>
-                <div className="w-80 h-80 bg-gradient-to-b from-sky-300 to-blue-800 rounded-full absolute left-54 translate-y-64 "></div>
+                <div className="w-52 h-52 bg-gradient-to-r from-yellow-500 to-cyan-400 rounded-full absolute left-54 -translate-y-14 hover:scale-125 hover:duration-500 hover:ease-in border-8 border-l-cyan-400 border-t-cyan-400 border-r-amber-300 2xl:hover:scale-150"></div>
+                <div className="w-80 h-80 bg-gradient-to-b from-sky-300 to-blue-800 rounded-full absolute left-54 translate-y-64 hover:scale-125 hover:duration-500 hover:ease-in border-8 border-l-blue-400 border-t-blue-400 border-cyan-300 2xl:hover:scale-150"></div>
                 <img
-                    className="w-72 relative"
+                    className="w-72 relative rotate-12"
                   src="https://preview.uideck.com/items/appland/assets/images/features-app.png"
                   alt="mobile3"
                 />
+              </div>
               </div>
             </div>
             </div>
           </section>
           {/*Section 5*/}
-          <section className="my-32">
-            <div className="">
+          <section className="mb-64">
+            <div className="container ">
               {/*Content*/}
-              <div className="text-center">
-                <h1 className="text-2xl font-semibold mb-5">App Screenshots.</h1>
+              <div className="text-center lg:max-w-lg mx-auto">
+                <h1 className="text-2xl font-semibold mb-5 lg:text-4xl">App Screenshots.</h1>
                 <p class="text-lg text-gray-400 mb-5">
                   Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor
                   comprehensam at vis. Vel ut percipitur dignissim
                   signiferumque.
                 </p>
               </div>
-              <div className="relative">
+              <div className="relative p-64 mt-32 container">
               {/*Image 4*/}
-              <div className="flex  justify-around flex-row  my-32 px-20 ">
-                <img className="invisible md:visible md:absolute  md:z-10 md:-top-2"
+              <div className="flex justify-around flex-row  ">
+                <img className="invisible md:visible md:absolute  md:-top-16 "
                   alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/app-frame.png"
                 />
-                <img className="absolute -top-10 -z-10 shadow-xl rounded-lg"
+                <img className="absolute lg:w-80 -top-10 left-10 -z-30 shadow-xl rounded-lg md:left-auto lg:left-auto"
                   alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/screenshot-2.jpg"
                 />
-                <img  className="absolute w-72 -top-5 -z-20 left-2  shadow-2xl "
+                <img  className="absolute w-72 -top-5 -z-40 left-0 shadow-2xl md:left-12 lg:left-14 lg:w-80 2xl:left-96"
                   alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/screenshot-2.jpg"
                 />
-                <img  className="absolute w-72 -top-5 -z-20 right-2 shadow-2xl "
+                <img  className="absolute w-72 -top-5 -z-40 shadow-2xl md:right-12 lg:w-80 lg:right-12 2xl:right-96 "
                   alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/screenshot-3.jpg"
                 />
-                <img className="absolute w-64 -top-0 -z-30 left-0 shadow-2xl"
+                <img className="absolute w-64 -top-0 -z-50 -left-12 md:-left-16 shadow-2xl lg:w-80 2xl:left-40"
                   alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/screenshot-4.jpg"
                 />
-                <img className=" absolute w-64 -top-0 -z-30 right-0 shadow-2xl"
+                <img className=" absolute w-64 -top-0 -z-50 right-1 shadow-2xl md:-right-16 lg:w-80 lg:-right-12 2xl:right-40"
                   alt=" mobile4"
                   src="https://preview.uideck.com/items/appland/assets/images/screenshot-3.jpg"
                 />
@@ -379,64 +368,64 @@ function App() {
               </div>
             </div>
           </section>
-          {/*Section 6*/}
-          <section className=" bg-cyan-100 mt-64 ">
-            <div className="container py-52">
-              {/*Content*/}
-              <div className="text-center  ">
-                <h1 className="text-2xl font-semibold  ">User Reviews.</h1>
-                <p class="text ">
-                  Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor
-                  comprehensam at vis. Vel ut percipitur dignissim
-                  signiferumque.
-                </p>
-              </div>
-              {/*Card*/}
-              <div className="relative border-transparent border-2 bg-white shadow-2xl my-12 rounded-md ">
-                {/*logo*/}
-                <svg className="absolute h-16 w-16 -top-10 translate-x-48 text-blue-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
+            {/*Section 6*/}
+            <section className=" bg-cyan-100 ">
+              <div className="container py-56 md:p-44">
                 {/*Content*/}
-                <div className="text-center px-3 ">
-                  <p class="text mt-8">
-                    Lorem ipsum dolor situt amet, consetetur sadipscing elitr,
-                    sed diam nonumy eirmod tempo invidunt labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eoset accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                    sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                    ipsum dolor amet sadipscing elitr.
+                <div className="text-center lg:max-w-lg lg:mx-auto ">
+                  <h1 className="text-2xl font-semibold  ">User Reviews.</h1>
+                  <p class="text ">
+                    Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor
+                    comprehensam at vis. Vel ut percipitur dignissim
+                    signiferumque.
                   </p>
-                  <h1 className="text-2xl font-semibold">Linda Sophia</h1>
-                  <p class="text">Designer, SpaceX</p>
+                </div>
+                {/*Card*/}
+                <div className="relative border-transparent border-2 bg-white shadow-2xl my-16 rounded-md ">
+                  {/*logo*/}
+                  <svg className="absolute h-16 w-16 -top-10 translate-x-48 text-blue-600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  {/*Content*/}
+                  <div className="text-center px-3 lg:px-16 ">
+                    <p class="text mt-8">
+                      Lorem ipsum dolor situt amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempo invidunt labore et dolore magna
+                      aliquyam erat, sed diam voluptua. At vero eoset accusam et
+                      justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                      sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                      ipsum dolor amet sadipscing elitr.
+                    </p>
+                    <h1 className="text-2xl font-semibold">Linda Sophia</h1>
+                    <p class="text">Designer, SpaceX</p>
+                  </div>
+                </div>
+                {/*avatar*/}
+                <div className="flex gap-8 justify-between">
+                  <img alt="avatar" className="rounded-full border-4 border-white"src="https://preview.uideck.com/items/appland/assets/images/author-4.jpg" />
+                  <img alt="avatar" className="rounded-full border-4 border-white"src="https://preview.uideck.com/items/appland/assets/images/author-3.jpg" />
+                  <img className="border-4 border-white rounded-full "  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-2.jpg" />
+                  <img className="invisible lg:visible border-4 border-white rounded-full"  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-5.jpg" />
+                  <img className="invisible lg:visible border-4 border-white rounded-full"  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-6.jpg" />
                 </div>
               </div>
-              {/*avatar*/}
-              <div className="flex gap-8 justify-between">
-                <img alt="avatar" className="rounded-full border-4 border-white"src="https://preview.uideck.com/items/appland/assets/images/author-4.jpg" />
-                <img alt="avatar" className="rounded-full border-4 border-white"src="https://preview.uideck.com/items/appland/assets/images/author-3.jpg" />
-                <img className="invisible"  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-2.jpg" />
-                <img className="invisible"  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-5.jpg" />
-                <img className="invisible"  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-6.jpg" />
-              </div>
-            </div>
-          </section>
-          {/*Section 7*/}
-          <section className="mt-24 container">
+            </section>
+            {/*Section 7*/}
+          <section className="mt-24 container"> 
             <div>
               {/*Content*/}
-              <div className="text-center">
-                <h1 className="text-2xl font-semibold">Choose a Plan.</h1>
+              <div className="text-center mx-auto lg:max-w-lg">
+                <h1 className="text-2xl font-semibold md:text-4xl">Choose a Plan.</h1>
                 <p class="text mt-4">
                   Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor
                   comprehensam at vis. Vel ut percipitur dignissim
@@ -444,9 +433,9 @@ function App() {
                 </p>
               </div>
               {/*Card*/}
-              <div className="mt-12">
+              <div className="mt-12 md:grid md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                 {/*Card 1*/}
-                <div className="hover:duration-300 hover:ease-in hover:shadow-2xl border-transparent shadow-xl text-center space-y-4 py-4">
+                <div className="hover:duration-300 hover:ease-in hover:shadow-2xl border-transparent shadow-xl text-center space-y-4 py-4 bg-green-200">
                   <h1 className="text-3xl font-semibold mb-2">Basic</h1>
                   <h1 className="text-4xl font-semibold mb-2">$49</h1>
                   <p className="text">Monthly</p>
@@ -456,10 +445,10 @@ function App() {
                   <p className="text">10 Free Optimization</p>
                   <p className="text">24/7 support</p>
                   {/*button*/}
-                  <button className="border-2 border-black px-6 py-3 rounded-md text hover:bg-gray-500 hover:duration-500 hover:ease-in hover:text-white ">Purchase Now</button>
+                  <button className="border-2 border-black px-6 py-3 rounded-md text hover:bg-yellow-200 hover:duration-500 hover:ease-in  ">Purchase Now</button>
                 </div>
                 {/*Card 2*/}
-                <div className="hover:duration-300 hover:ease-in hover:shadow-2xl border-transparent shadow-xl text-center space-y-4 py-4 mt-12">
+                <div className="hover:duration-300 hover:ease-in hover:shadow-2xl border-transparent shadow-xl text-center space-y-4 py-4 mt-12 md:mt-0 bg-yellow-200">
                   <h1 className="text-3xl font-semibold mb-2" >Standard</h1>
                   <h1  className="text-4xl font-semibold mb-2" >$99</h1>
                   <p className="text">Monthly</p>
@@ -469,10 +458,10 @@ function App() {
                   <p className="text">10 Free Optimization</p>
                   <p className="text">24/7 support</p>
                   {/*button*/}
-                  <button className="border-transparent bg-blue-500 px-6 py-4 rounded-lg text-white hover:bg-blue-400 hover:duration-500 hover:ease-in">Purchase Now</button>
+                  <button className="border-black border-2 bg-transparent px-6 py-4 rounded-lg   hover:bg-red-400 hover:duration-500 hover:ease-in">Purchase Now</button>
                 </div>
                 {/*Card 3*/}
-                <div className="hover:duration-300 hover:ease-in hover:shadow-2xl border-transparent shadow-xl text-center space-y-4 py-4 mt-12">
+                <div className="hover:duration-300 hover:ease-in hover:shadow-2xl border-transparent shadow-xl text-center space-y-4 py-4 mt-12 md:col-span-2 lg:col-auto lg:mt-0 bg-red-400 md:rounded-md">
                   <h1 className="text-3xl font-semibold mb-2">Professional</h1>
                   <h1 className="text-4xl font-semibold mb-2">$199</h1>
                   <p className="text">Monthly</p>
@@ -482,35 +471,37 @@ function App() {
                   <p className="text">10 Free Optimization</p>
                   <p className="text">24/7 support</p>
                   {/*button*/}
-                  <button className="border-2 border-black px-6 py-3 rounded-md text hover:bg-gray-500 hover:duration-500 hover:ease-in hover:text-white ">Purchase Now</button>
+                  <button className="border-2 border-black px-6 py-3 rounded-md text hover:bg-green-200  hover:duration-500 hover:ease-in  ">Purchase Now</button>
                 </div>
               </div>
             </div>
           </section>
           {/*Section 8*/}
           <section className="container" >
-            <div>
+          <div className="md:flex md:flex-col md:items-center lg:flex lg:flex-row lg:gap-52 lg:p-52">
               {/*Image*/}
               <div className="relavtive">
                 <div className=" mt-28">
-                <div className="w-52 h-52 bg-gradient-to-r from-yellow-500 to-cyan-400 rounded-full absolute left-32 -translate-y-14 hover:scale-125 hover:duration-500 hover:ease-in"></div>
-                <div className="w-80 h-80 bg-gradient-to-b from-sky-300 to-blue-800 rounded-full absolute left-60 translate-y-64  -translate-x-44 "></div>
+                <div className=" w-52 h-52 bg-gradient-to-r from-yellow-500 to-cyan-400 rounded-full absolute left-32 -translate-y-14 md:left-80 md:translate-x-44 md:hover:scale-125 md:hover:duration-500 md:hover:ease-in lg:left-0 lg:-translate-y-96 2xl:translate-x-96 2xl:hover:scale-150"></div>
+                <div className=" w-80 h-80 bg-gradient-to-b from-sky-300 to-blue-800 rounded-full absolute left-44 translate-y-96  md:left-80  md:translate-y-96 -translate-x-44 md:hover:scale-150 md:hover:duration-500 md:hover:ease-in lg:translate-y-32 lg:hover:scale-125 2xl:translate-x-32  "></div>
                 <img
-                    className="w-96 relative"
+                    className="w-96 relative lg:absolute lg:w-80 lg:-translate-x-44 lg:-translate-y-72 2xl:translate-x-28"
                   src="https://preview.uideck.com/items/appland/assets/images/download-app.png"
                   alt=" mobile3"
                 />
               </div>
             </div>
               {/*Content*/}
-              <div className="mt-32">
-                <div>
-                <h1 className="text-2xl font-semibold mb-5">Download and Start Using!</h1>
+              <div className="mt-32 lg:mt-12  mx-auto md:max-w-xl ">
+                <div className="md:px-16 md:ml-12">
+                <div className="">
+                <h1 className="text-2xl font-semibold mb-5 md:text-4xl ">Download and Start Using!</h1>
                 <p class="text-lg text-gray-600 mb-12">Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq Alii nusquam cuduo, vim eusde consulatu percipitur, meis dolor comprehensam at vij. Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq nusquam.</p>
                 </div>
                 {/*2 card*/}
-                <div className="flex gap-4 ">
+                <div className="flex gap-4 font-light lg:flex lg:flex-col ">
                   {/*Card1*/}
+                  <div>
                   <div className="flex border-transparent bg-blue-500 text-white justify-center w-52 h-16 gap-4 rounded-lg items-center">
                     {/*logo*/}
                     <svg
@@ -527,9 +518,10 @@ function App() {
                       <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z" />
                     </svg>
                     <div>
-                    <p className=" text-xs">Download On the</p>
-                    <h1 className="text-xs">App Store</h1>
+                    <p className=" text-xs font-semibold">Download On the</p>
+                    <h1 className="text-xs font-semibold">App Store</h1>
                     </div>
+                  </div>
                   </div>
                   {/*Card2*/}
                   <div className="flex border-transparent bg-gray-800 text-white justify-center w-52 h-16 gap-4 rounded-lg items-center">
@@ -547,33 +539,35 @@ function App() {
                       />
                     </svg>
                     <div>
-                    <p className="text-xs">Download On the</p>
-                    <h1 className="text-xs">Google Play</h1>
+                    <p className="text-xs font-semibold">Download On the</p>
+                    <h1 className="text-xs font-semibold">Google Play</h1>
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>
-            </div>
+              </div>
           </section>
           {/*Section 9*/}
-          <section className="mt-32 container">
+          <section className="mt-32 container ">
             {/*Container*/}
-            <div>
+            <div className="lg:flex lg:flex-row  gap-10">
               {/*Content 1*/}
-              <div>
+              <div className="2xl:ml-28">
                 {/*Logo*/}
+                <div className="max-w-md mx-auto md:max-w-xs">
                 <img
-                  className="w-48"
+                  className="w-48 mb-6"
                   src="https://preview.uideck.com/items/appland/assets/images/logo.png"
                   alt="logo website"
                 />
-                <p class="text mt-12 max-w-sm ">
+                <p class="text ">
                   Lorem ipsum dolor sit amet consetetur sadipscing elitr,
                   sederfs diam nonumy eirmod tempor invidunt ut labore et dolore
                   magna aliquyam.
                 </p>
                 {/*Socical*/}
-                <div className="flex gap-8 ">
+                <div className="flex gap-12  ">
                   <svg
                     class="w-6 h-6 text-blue-600 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -603,9 +597,10 @@ function App() {
                     <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
                   </svg>
                 </div>
+                </div>
               </div>
               {/*Content 2*/}
-              <div className="grid grid-cols-2 mt-12">
+              <div className="grid grid-cols-2 lg:gird lg:grid-cols-3 mt-12 lg:mt-0">
               <div>
                 <ul className="space-y-4">
                   <li className="text-2xl font-semibold">Quick Links</li>
@@ -628,8 +623,8 @@ function App() {
                 </ul>
               </div>
               {/*Content 4*/}
-              <div className="col-span-2 mt-12">
-                <ul className="space-y-4">
+              <div className="col-span-2 lg:col-span-1 mt-12 lg:mt-0">
+                <ul className="space-y-8">
                   <li className="text-2xl font-semibold">Quick Link</li>
                   <div className="flex gap-4 items-center">
                     <svg
@@ -680,7 +675,7 @@ function App() {
                         d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"
                       />
                     </svg>
-                    <p class="text-li">
+                    <p class="text-li lg:max-w-sm lg:mx-auto">
                       123 Stree New York City , United States Of America 750.
                     </p>
                   </div>
@@ -688,11 +683,11 @@ function App() {
               </div>
             </div>
             </div>
-            <div className="h-0.5 w-full items-center bg-gray-800 mt-12"></div>
+            <div className="h-0.5 w-11/12 mx-auto items-center bg-gray-800 mt-12"></div>
           </section>
           {/*Footer*/}
-          <footer className="container my-6">
-            <div className="text-center space-y-4">
+          <footer className="container my-6 ">
+            <div className="text-center space-y-4 md:flex md:flex-row md:justify-between md:items-center">
               <h1 className="text-xl text-gray-500">Crafted by <span className="text-blue-500 cursor-pointer hover:text-blue-900 hover:duration-500 hover:ease-in"> UIdeck</span> </h1>
               <h1 className="text-gray-500 text-xl">Report Issues</h1>
             </div>
