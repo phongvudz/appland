@@ -411,10 +411,10 @@ function App() {
                   </div>
                 </div>
                 {/*avatar*/}
-                <div className="flex gap-8 justify-between">
+                <div className="flex gap-8 justify-between  items-center">
                   <img alt="avatar" className="rounded-full border-4 border-white"src="https://preview.uideck.com/items/appland/assets/images/author-4.jpg" />
                   <img alt="avatar" className="rounded-full border-4 border-white"src="https://preview.uideck.com/items/appland/assets/images/author-3.jpg" />
-                  <img className="border-4 border-white rounded-full "  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-2.jpg" />
+                  <img className=" invisible lg:visible border-4 border-white rounded-full "  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-2.jpg" />
                   <img className="invisible lg:visible border-4 border-white rounded-full"  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-5.jpg" />
                   <img className="invisible lg:visible border-4 border-white rounded-full"  alt="avatar" src="https://preview.uideck.com/items/appland/assets/images/author-6.jpg" />
                 </div>
@@ -499,7 +499,7 @@ function App() {
                 <p class="text-lg text-gray-600 mb-12">Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq Alii nusquam cuduo, vim eusde consulatu percipitur, meis dolor comprehensam at vij. Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq nusquam.</p>
                 </div>
                 {/*2 card*/}
-                <div className="flex gap-4 font-light lg:flex lg:flex-col ">
+                <div className="flex gap-4 font-light  flex-col cursor-pointer ">
                   {/*Card1*/}
                   <div>
                   <div className="flex border-transparent bg-blue-500 text-white justify-center w-52 h-16 gap-4 rounded-lg items-center">
@@ -538,7 +538,7 @@ function App() {
                         clip-rule="evenodd"
                       />
                     </svg>
-                    <div>
+                    <div className="">
                     <p className="text-xs font-semibold">Download On the</p>
                     <h1 className="text-xs font-semibold">Google Play</h1>
                     </div>
